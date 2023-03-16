@@ -22,7 +22,6 @@ export type Person = {
 export const usePersonViaUrl = (url: string) => {
   if (!isValidUrl(url)) {
     console.log('URL not valid!');
-    return;
   }
   const context = useFetch<any>(url);
   return context;
