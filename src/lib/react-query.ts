@@ -1,4 +1,4 @@
-import { QueryClient, type QueryFunctionContext, useQuery } from 'react-query';
+import { QueryClient, type QueryFunctionContext, useQuery, useQueries } from 'react-query';
 import { apiClient } from './axios';
 
 type QueryKey = [string, object | undefined];

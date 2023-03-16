@@ -25,7 +25,7 @@ export const AppBars = () => {
               fontFamily: 'monospace',
               fontWeight: 700,
               letterSpacing: '.3rem',
-              color: 'inherit',
+              color: '#1d3557',
               textDecoration: 'none',
             }}
           >
@@ -33,7 +33,7 @@ export const AppBars = () => {
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
-              <Button key={page} sx={{ my: 2, color: 'cornflowerblue', display: 'block' }}>
+              <Button key={page} sx={{ my: 2, color: '#1d3557', display: 'block' }}>
                 {page}
               </Button>
             ))}
