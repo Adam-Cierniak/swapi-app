@@ -6,7 +6,7 @@ import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import AdbIcon from '@mui/icons-material/Adb';
 
-const pages = ['Planets', 'Movies'];
+const pages = ['Planets'];
 
 export const AppBars = () => {
   return (

@@ -1,4 +1,6 @@
 import { Grid, Typography, Container } from '@mui/material';
+import { Error } from '../../../components/Error/Error';
+import { Spinner } from '../../../components/Spinner/Spinner';
 import { useGetPlanets } from '../api/planetsApi';
 import { Planet } from './Planet';
 
@@ -12,9 +14,9 @@ export const Planets = (): JSX.Element => {
           Planets
         </Typography>
         {status === 'loading' ? (
-          <div>Loading...</div>
+          <Spinner />
         ) : status === 'error' ? (
-          <div>Error: {error.message}</div>
+          <Error error={error} />
         ) : (
           <Grid container rowSpacing={1} columnSpacing={{ xs: 2, sm: 4, md: 6 }}>
             {planets?.results.map((planet) => (
